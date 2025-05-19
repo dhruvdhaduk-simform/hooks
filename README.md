@@ -61,3 +61,16 @@ const [counter, setCounter, removeCounter] = useSessionStorage(
     }
 );
 ```
+
+### useUndoRedo
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useUndoRedo.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-undo-redo)
+- This hook wraps the `useState` to provide `undo` and `redo` functionality.
+- It takes the initial value as an argument.
+- It returns tuple of 4 : value, setValue function, undo function, redo function.
+- Example :
+
+```typescript
+const [color, setColor, undoColor, redoColor] = useUndoRedo('#000000');
+```

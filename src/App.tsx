@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
-import { UseLocalStorageDemo } from './demos/UseLocalStorageDemo';
 import { UseToggleDemo } from './demos/UseToggleDemo';
+import { UseLocalStorageDemo } from './demos/UseLocalStorageDemo';
+import { UseSessionStorageDemo } from './demos/UseSessionStorageDemo';
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <div className="pt-28 flex flex-col gap-8">
                 <UseToggleDemo />
                 <UseLocalStorageDemo />
+                <UseSessionStorageDemo />
             </div>
         </div>
     );

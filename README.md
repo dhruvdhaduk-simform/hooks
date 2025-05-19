@@ -38,3 +38,26 @@ const [counter, setCounter, removeCounter] = useLocalStorage(
     }
 );
 ```
+
+### useSessionStorage
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useSessionStorage.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-session-storage)
+- This hook syncs the state with sessionStorage.
+- It takes 3 thigs as arguments : Session Storage key, initial value of state, parser function to parse the state from raw string stored in local storage.
+- It returns a tuple of 3 : value, setValue function, removeValue function.
+- Example :
+
+```typescript
+const [counter, setCounter, removeCounter] = useSessionStorage(
+    'MY_COUNTER',
+    0,
+    (x) => {
+        const num = Number(x);
+        if (isFinite(num) && Number.isInteger(num) && num >= 0) {
+            return num;
+        }
+        return 0;
+    }
+);
+```

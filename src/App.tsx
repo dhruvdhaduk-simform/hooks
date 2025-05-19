@@ -2,6 +2,7 @@ import { Header } from './components/Header';
 import { UseToggleDemo } from './demos/UseToggleDemo';
 import { UseLocalStorageDemo } from './demos/UseLocalStorageDemo';
 import { UseSessionStorageDemo } from './demos/UseSessionStorageDemo';
+import { UseUndoRedoDemo } from './demos/UseUndoRedoDemo';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <UseToggleDemo />
                 <UseLocalStorageDemo />
                 <UseSessionStorageDemo />
+                <UseUndoRedoDemo />
             </div>
         </div>
     );

@@ -6,8 +6,11 @@ export function UseToggleDemo() {
     const [value, toggle, setValue] = useToggle();
 
     return (
-        <div className="p-4">
-            <SectionHeading label="useToggle demo" />
+        <div className="p-4" id="use-toggle-demo">
+            <SectionHeading
+                docsLink="https://github.com/dhruvdhaduk-simform/hooks?tab=readme-ov-file#usetoggle"
+                label="useToggle demo"
+            />
             <div className="p-4">
                 <div className="p-1 flex justify-center">
                     <Button onClick={toggle}>

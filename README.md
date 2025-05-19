@@ -7,7 +7,7 @@
 ### useToggle
 
 - [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useToggle.ts)
-- [Live Demo](https://my-custom-hooks.netlify.app/#use-toggle-demo)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-toggle)
 - This hooks stored a boolean value and provides a function to toggle the value.
 - It returns a tupe of 3 : value, toggle function, setValue function.
 - Usage,

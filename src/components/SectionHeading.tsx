@@ -6,7 +6,7 @@ export function SectionHeading({
     docsLink: string;
 }) {
     return (
-        <a href={docsLink} className="text-3xl font-bold">
+        <a href={docsLink} className="text-3xl font-bold hover:underline">
             {label}
         </a>
     );

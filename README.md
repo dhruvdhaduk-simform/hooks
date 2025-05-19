@@ -2,6 +2,13 @@
 
 - These are the React custom hooks that I've created.
 
+## Index of Hooks
+
+- [useToggle](https://github.com/dhruvdhaduk-simform/hooks?tab=readme-ov-file#usetoggle)
+- [useLocalStorage](https://github.com/dhruvdhaduk-simform/hooks?tab=readme-ov-file#uselocalstorage)
+- [useSessionStorage](https://github.com/dhruvdhaduk-simform/hooks?tab=readme-ov-file#usesessionstorage)
+- [useUndoRedo](https://github.com/dhruvdhaduk-simform/hooks?tab=readme-ov-file#useundoredo)
+
 ## List of Hooks
 
 ### useToggle

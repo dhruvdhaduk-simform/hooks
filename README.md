@@ -8,10 +8,33 @@
 
 - [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useToggle.ts)
 - [Live Demo](https://my-custom-hooks.netlify.app/#use-toggle)
-- This hooks stored a boolean value and provides a function to toggle the value.
-- It returns a tupe of 3 : value, toggle function, setValue function.
-- Usage,
+- This hook stores a boolean value and provides a function to toggle the value.
+- It returns a tuple of 3 : value, toggle function, setValue function.
+- Usage :
 
 ```typescript
 const [value, toggle, setValue] = useToggle();
+```
+
+### useLocalStorage
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useLocalStorage.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-local-storage)
+- This hook syncs the state with localStorage.
+- It takes 3 thigs as arguments : Local Storage key, initial value of state, parser function to parse the state from raw string stored in local storage.
+- It returns a tuple of 3 : value, setValue function, removeValue function.
+- Example :
+
+```typescript
+const [counter, setCounter, removeCounter] = useLocalStorage(
+    'MY_COUNTER',
+    0,
+    (x) => {
+        const num = Number(x);
+        if (isFinite(num) && Number.isInteger(num) && num >= 0) {
+            return num;
+        }
+        return 0;
+    }
+);
 ```

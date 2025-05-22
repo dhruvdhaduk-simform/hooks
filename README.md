@@ -93,3 +93,16 @@ const [color, setColor, undoColor, redoColor] = useUndoRedo('#000000');
 ```typescript
 const isEscPressed = useKeyPress('Escape');
 ```
+
+### useResetState
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useResetState.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-reset-state)
+- This hook wraps `useState` to reset function, using which we can reset state to initial state.
+- It takes `initialState` as an argument.
+- It returns a tuple of 3 : value, setValue function, reset function.
+- Example :
+
+```typescript
+const [counter, setCounter, resetCounter] = useResetState(0);
+```

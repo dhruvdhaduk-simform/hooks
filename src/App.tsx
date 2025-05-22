@@ -4,6 +4,7 @@ import { UseLocalStorageDemo } from './demos/UseLocalStorageDemo';
 import { UseSessionStorageDemo } from './demos/UseSessionStorageDemo';
 import { UseUndoRedoDemo } from './demos/UseUndoRedoDemo';
 import { UseKeyPressDemo } from './demos/UseKeyPressDemo';
+import { UseResetStateDemo } from './demos/UseResetStateDemo';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <UseSessionStorageDemo />
                 <UseUndoRedoDemo />
                 <UseKeyPressDemo />
+                <UseResetStateDemo />
             </div>
         </div>
     );

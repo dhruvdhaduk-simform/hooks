@@ -5,6 +5,7 @@ import { UseSessionStorageDemo } from './demos/UseSessionStorageDemo';
 import { UseUndoRedoDemo } from './demos/UseUndoRedoDemo';
 import { UseKeyPressDemo } from './demos/UseKeyPressDemo';
 import { UseResetStateDemo } from './demos/UseResetStateDemo';
+import { UseDebounceDemo } from './demos/UseDebounceDemo';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <UseUndoRedoDemo />
                 <UseKeyPressDemo />
                 <UseResetStateDemo />
+                <UseDebounceDemo />
             </div>
         </div>
     );

@@ -106,3 +106,14 @@ const isEscPressed = useKeyPress('Escape');
 ```typescript
 const [counter, setCounter, resetCounter] = useResetState(0);
 ```
+
+### useDebounce
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useDebounce.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-debounce)
+- This hook takes a function, and delay as input and returns debounced function from it.
+- Example :
+
+```typescript
+const handleApiCallDebounce = useDebounce(handleApiCall, 1000);
+```

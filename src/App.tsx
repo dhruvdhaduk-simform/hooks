@@ -6,6 +6,7 @@ import { UseUndoRedoDemo } from './demos/UseUndoRedoDemo';
 import { UseKeyPressDemo } from './demos/UseKeyPressDemo';
 import { UseResetStateDemo } from './demos/UseResetStateDemo';
 import { UseDebounceDemo } from './demos/UseDebounceDemo';
+import { UseIsOfflineDemo } from './demos/UseIsOfflineDemo';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <UseKeyPressDemo />
                 <UseResetStateDemo />
                 <UseDebounceDemo />
+                <UseIsOfflineDemo />
             </div>
         </div>
     );

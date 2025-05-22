@@ -117,3 +117,14 @@ const [counter, setCounter, resetCounter] = useResetState(0);
 ```typescript
 const handleApiCallDebounce = useDebounce(handleApiCall, 1000);
 ```
+
+### useIsOffline
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useIsOffline.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-is-offline)
+- This hook returns true whenever user goes offline
+- Example :
+
+```typescript
+const isOffline = useIsOffline();
+```

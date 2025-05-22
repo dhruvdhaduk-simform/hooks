@@ -128,3 +128,14 @@ const handleApiCallDebounce = useDebounce(handleApiCall, 1000);
 ```typescript
 const isOffline = useIsOffline();
 ```
+
+### useClipboard
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useClipboard.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-clipboard)
+- This hook allows you to copy text to the clipboard and track whether the text was successfully copied.
+- Example :
+
+```typescript
+const { copy, isCopied } = useClipboard();
+```

@@ -7,6 +7,7 @@ import { UseKeyPressDemo } from './demos/UseKeyPressDemo';
 import { UseResetStateDemo } from './demos/UseResetStateDemo';
 import { UseDebounceDemo } from './demos/UseDebounceDemo';
 import { UseIsOfflineDemo } from './demos/UseIsOfflineDemo';
+import { UseClipboardDemo } from './demos/UseClipboardDemo';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <UseResetStateDemo />
                 <UseDebounceDemo />
                 <UseIsOfflineDemo />
+                <UseClipboardDemo />
             </div>
         </div>
     );

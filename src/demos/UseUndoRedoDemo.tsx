@@ -7,8 +7,6 @@ export function UseUndoRedoDemo() {
     const [color, setColor, undoColor, redoColor] = useUndoRedo('#000000');
     const inputRef = useRef<HTMLInputElement | null>(null);
 
-    console.log(color);
-
     return (
         <div className="p-4" id="use-undo-redo">
             <SectionHeading

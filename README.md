@@ -81,3 +81,15 @@ const [counter, setCounter, removeCounter] = useSessionStorage(
 ```typescript
 const [color, setColor, undoColor, redoColor] = useUndoRedo('#000000');
 ```
+
+### useKeyPress
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useKeyPress.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-key-press)
+- This hook returns `true` or `false` if given key is pressed.
+- It can be any key from keyboard.
+- Example :
+
+```typescript
+const isEscPressed = useKeyPress('Escape');
+```

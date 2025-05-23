@@ -160,3 +160,19 @@ const [formData, handleChange, handleSubmit, resetForm] = useForm<FormData>(
     }
 );
 ```
+
+### useOnClickOutside
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useOnClickOutside.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-on-click-outside)
+- This hook detects when a user clicks outside the given DOM node and runs a callback.
+- This hook doesn't return anything; it just listens to outside clicks.
+- Example :
+
+```typescript
+const ref = useRef(null);
+useOnClickOutside(ref, callback);
+
+// Later in JSX
+<div ref={ref}></div>
+```

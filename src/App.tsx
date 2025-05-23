@@ -9,6 +9,7 @@ import { UseDebounceDemo } from './demos/UseDebounceDemo';
 import { UseIsOfflineDemo } from './demos/UseIsOfflineDemo';
 import { UseClipboardDemo } from './demos/UseClipboardDemo';
 import { UseFormDemo } from './demos/UseFormDemo';
+import { UseOnClickOutside } from './demos/UseOnClickOutside';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <UseIsOfflineDemo />
                 <UseClipboardDemo />
                 <UseFormDemo />
+                <UseOnClickOutside />
             </div>
         </div>
     );

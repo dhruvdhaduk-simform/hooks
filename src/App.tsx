@@ -8,6 +8,7 @@ import { UseResetStateDemo } from './demos/UseResetStateDemo';
 import { UseDebounceDemo } from './demos/UseDebounceDemo';
 import { UseIsOfflineDemo } from './demos/UseIsOfflineDemo';
 import { UseClipboardDemo } from './demos/UseClipboardDemo';
+import { UseFormDemo } from './demos/UseFormDemo';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <UseDebounceDemo />
                 <UseIsOfflineDemo />
                 <UseClipboardDemo />
+                <UseFormDemo />
             </div>
         </div>
     );

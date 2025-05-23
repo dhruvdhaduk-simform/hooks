@@ -139,3 +139,24 @@ const isOffline = useIsOffline();
 ```typescript
 const { copy, isCopied } = useClipboard();
 ```
+
+### useForm
+
+- [Source Code](https://github.com/dhruvdhaduk-simform/hooks/blob/main/src/hooks/useForm.ts)
+- [Live Demo](https://my-custom-hooks.netlify.app/#use-form)
+- This hook manages form state and handles changes and submission logic.
+- It takes `initialValues` and `onSubmit` function as arguments.
+- It returns a tuple of 4 : `formData`, `handleChange` function, `handleSubmit` function, `resetForm` function.
+- Example :
+
+```typescript
+const [formData, handleChange, handleSubmit, resetForm] = useForm<FormData>(
+    {
+        email: '',
+        password: '',
+    },
+    (data) => {
+        alert(`Form Submitted with data : ${JSON.stringify(data)}`);
+    }
+);
+```

@@ -27,7 +27,7 @@ export function UseOnClickOutside() {
                     ref={ref}
                 >
                     <Button onClick={() => setIsActive(!isActive)}>
-                        {isActive ? 'Deactive hook' : 'Activate hook'}
+                        {isActive ? 'Deactivate hook' : 'Activate hook'}
                     </Button>
                     {isActive ? (
                         <p className="text-green-500 font-bold">
